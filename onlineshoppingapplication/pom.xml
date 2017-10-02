@@ -1,19 +1,31 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>net.parls</groupId>
-  <artifactId>OnlineShoppingFrontEnd</artifactId>
-  <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>OnlineShoppingFrontEnd Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  <!--Version Information -->
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.parls</groupId>
+	<artifactId>onlineshoppingapplication</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>onlineshoppingapplication Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<!--Version Information -->
 	<properties>
 		<javaee.version>8.0</javaee.version>
 		<spring.version>4.3.6.RELEASE</spring.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+			<scope>compile</scope>
+		</dependency>
 		<!-- JAVA EE API -->
 		<dependency>
 			<groupId>javax</groupId>
@@ -41,7 +53,7 @@
 	<build>
 		<plugins>
 			<plugin>
-			<!-- Update to latest JAVA version -->
+				<!-- Update to latest JAVA version -->
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
@@ -50,6 +62,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-    <finalName>OnlineShoppingFrontEnd</finalName>
-  </build>
+		<finalName>onlineshoppingapplication</finalName>
+	</build>
 </project>
