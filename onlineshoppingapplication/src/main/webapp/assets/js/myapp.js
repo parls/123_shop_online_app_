@@ -1,16 +1,16 @@
 $(function() {
 	switch (menu) {
 	case 'About Us':
-		$('#about').addClass(active);
+		$('#about').addClass('active');
 		break;
 	case 'Contact Us':
-		$('#contact').addClass(active);
+		$('#contact').addClass('active');
 		break;
 	case 'Shop':
-		$('#shop').addClass(active);
+		$('#shop').addClass('active');
 		break;
 	default:
-		$('#home').addClass(active);
+		$('#home').addClass('active');
 	break;
 	}
 
