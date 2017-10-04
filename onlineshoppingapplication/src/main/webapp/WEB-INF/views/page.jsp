@@ -24,7 +24,7 @@
     <meta name="author" content="">
 
     <title>PnP - ${title}</title>
-
+    <script>window.menu='${title}';</script>
     <!-- Bootstrap core CSS -->
     <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
@@ -37,9 +37,20 @@
 
     <!-- Navigation -->
     <%@include file="./shared/navbar.jsp" %>
-     <!-- Home -->
-     <c:if test="${userClickHome == true}">  
+     <!--Load only when user clicks Home -->
+     <c:if test="${userClickHome == true}"> 
     <%@include file="home.jsp" %>  
+     </c:if>
+     <!--Load only when user clicks About -->
+     <c:if test="${userClickAbout == true}"> 
+    <%@include file="about.jsp" %>  
+     </c:if>
+     <!--Load only when user clicks Contact -->
+     <c:if test="${userClickContact == true}"> 
+    <%@include file="contact.jsp" %>  
+     </c:if>
+     <c:if test="${userClickShop == true}"> 
+    <%@include file="shop.jsp" %>  
      </c:if>
     <!-- Footer -->
      <%@include file="./shared/footer.jsp" %>
@@ -48,6 +59,8 @@
     <script src="${js}/jquery.js"></script>
     <script src="${js}/popper.min.js"></script> 
     <script src="${js}/bootstrap.min.js"></script>
+    <!-- Self coded javascript -->
+    <script src="${js}/myapp.js"></script>
 
   </body>
 
